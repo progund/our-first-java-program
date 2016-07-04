@@ -17,3 +17,9 @@ test: $(TESTCLASS).class
 print:
 	echo "$(CLASSES)"
 	echo "$(SOURCES)"
+
+clean:
+	-find . -name "*~"  | xargs rm
+	-find . -name "#*"  | xargs rm
+	-find . -name "*.class"  | xargs rm
+
